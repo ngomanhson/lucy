@@ -348,7 +348,7 @@ a {
 }
 
 .about__label {
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1;
@@ -413,7 +413,7 @@ a {
 }
 
 .about__card-title {
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
     font-weight: 700;
     font-size: 4.2rem;
     line-height: 1;
@@ -568,7 +568,7 @@ a {
 }
 
 .tab__title {
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1;
@@ -609,4 +609,75 @@ a {
 .tab__content-more::after {
     opacity: 1;
     height: 1.5px;
+}
+
+/* Service */
+.service {
+    margin-top: 190px;
+    padding: 69px 0 100px;
+    background: #fff6ed;
+}
+
+.services__top {
+    font-family: "Sora", sans-serif;
+
+    text-align: center;
+}
+
+.service__desc {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+    padding-bottom: 15px;
+}
+
+.service__body {
+    margin-top: 71px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.service-item {
+    width: 294px;
+    padding: 30px 22px 30px 28px;
+    background: var(--white);
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+
+.service-item + .service-item {
+    margin-top: 24px;
+}
+
+.service-item__heading {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.service-item__more {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 24px;
+    font-family: "Sora", sans-serif;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #34396a;
+}
+
+.service-item__more::after {
+    content: url(../icons/arrow-up-right.svg);
+    margin: 1px 0 0 5px;
 }
