@@ -100,6 +100,7 @@ a {
     font-weight: 700;
     font-size: 5.2rem;
     line-height: 1.19;
+    color: #000958;
 }
 
 .section-desc {
@@ -624,7 +625,8 @@ a {
     text-align: center;
 }
 
-.service__desc {
+.service__desc,
+.staff__desc {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1;
@@ -731,7 +733,83 @@ a {
     transition: var(--animation);
 }
 
-.service__cta:hover {
+.service__cta:hover,
+.staff__cta:hover {
     background: var(--primary-color);
     color: var(--white);
+}
+
+/* Staff */
+.staff {
+    padding: 130px 0;
+}
+
+.staff__desc,
+.staff__heading {
+    text-align: center;
+}
+
+.staff__list {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+
+.staff-item {
+    text-align: center;
+}
+
+.staff-item__img-wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 130px;
+    overflow: hidden;
+}
+
+.staff-item__img-wrap::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 266px;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+    border-radius: inherit;
+}
+
+.staff-item__img {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 1;
+}
+
+.staff-item__title {
+    margin-top: 34px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
+}
+
+.staff-item__name {
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+
+.staff__cta-wrap {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.staff__cta {
+    min-width: 193px;
+    color: var(--primary-color);
+    border-color: currentColor;
+    transition: var(--animation);
 }
