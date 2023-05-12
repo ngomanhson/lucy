@@ -734,7 +734,8 @@ a {
 }
 
 .service__cta:hover,
-.staff__cta:hover {
+.staff__cta:hover,
+.blog__cta:hover {
     background: var(--primary-color);
     color: var(--white);
 }
@@ -1151,4 +1152,32 @@ a {
     width: 24px;
     height: 8px;
     background: var(--primary-color);
+}
+
+/* Blog */
+.blog {
+    padding: 78px 0;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 350px;
+    margin-right: 74px;
+}
+
+.blog__desc {
+    margin-top: 0;
+}
+
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    border: 1px solid rgb(255, 91, 46, 60%);
+    color: var(--primary-color);
+    transition: var(--animation);
 }
